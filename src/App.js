@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 import Amplify from 'aws-amplify';
+import React, { Component } from 'react';
+import './App.css';
 import aws_exports from './aws-exports';
 Amplify.configure(aws_exports);
 
@@ -12,18 +11,7 @@ class App extends Component {
       <div className="App">
         <AmplifySignOut />
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h2>Welcome To Content</h2>
         </header>
       </div>
     );
